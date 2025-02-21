@@ -26,17 +26,6 @@ const SignIn = () => {
 
   return (
     <div className="container">
-      <div
-        className="logo"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "0 auto",
-        }}
-      >
-        🔒
-      </div>
       <h2 style={{ textAlign: "center" }}>Iniciar Sesión</h2>
       {error && <p style={{ color: "red", textAlign: "center" }}>{error}</p>}
       <form onSubmit={handleSubmit}>
