@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./App.css"; // Asegúrate de importar tu CSS
+import "./App.css";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setError("");
@@ -18,7 +17,7 @@ const SignIn = () => {
     }
 
     if (email === "admin@example.com" && password === "password123") {
-      navigate("/dashboard");
+      navigate("/menu");
     } else {
       setError("Credenciales incorrectas");
     }

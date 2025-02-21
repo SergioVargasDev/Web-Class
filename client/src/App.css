@@ -11,19 +11,6 @@ body {
   flex-direction: column;
 }
 
-.logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(45 deg, #4ff6e5, #373a03);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 15px rgba(79, 70, 229.05);
-  animation: spin 0.25s linear infinite;
-  margin-bottom: 20px;
-}
-
 .container {
   max-width: 360px;
   width: 100%;
@@ -51,4 +38,42 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  background: #1e1e1e;
+  padding: 15px 30px;
+  border-bottom: 2px solid #2c2c2c;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-right {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
+  padding: 0;
+}
+
+.navbar-right li {
+  display: inline;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-right a:hover {
+  color: #4ff6e5;
 }
