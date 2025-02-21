@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./App.css"; // Asegúrate de importar tu CSS
+import "./App.css"; 
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
