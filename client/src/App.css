@@ -77,3 +77,20 @@ body {
 .navbar-right a:hover {
   color: #4ff6e5;
 }
+
+.logout-button {
+  background: none;
+  border: 2px solid #4ff6e5;
+  color: #4ff6e5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background: #4ff6e5;
+  color: #121212;
+}

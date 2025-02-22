@@ -7,6 +7,7 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setError("");
@@ -16,7 +17,9 @@ const SignIn = () => {
       return;
     }
 
+    // Simple auth check (Replace with real authentication)
     if (email === "admin@example.com" && password === "password123") {
+      localStorage.setItem("auth", "true"); // Save auth status
       navigate("/menu");
     } else {
       setError("Credenciales incorrectas");
